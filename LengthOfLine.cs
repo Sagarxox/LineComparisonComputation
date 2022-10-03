@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Runtime.Remoting.Channels;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -21,7 +22,7 @@ namespace LineComparison
 
 
 
-
+            Console.WriteLine("line1 \n ");
             Console.WriteLine("enter the cordinates of starting point ie x1 and y1  ");
             Console.WriteLine("enter the cordinates of starting point ie x2and y2  ");
 
@@ -47,7 +48,8 @@ namespace LineComparison
 
 
             //line2
-
+            Console.WriteLine( "\n ------------------------------\n ");
+            Console.WriteLine(" line 2");
             Console.WriteLine("enter the cordinates of starting point ie x1 and y1  ");
             Console.WriteLine("enter the cordinates of starting point ie x2and y2  ");
 

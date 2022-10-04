@@ -35,19 +35,13 @@ namespace LineComparison
             Console.WriteLine(" the starting point of y axis y1 : {0}", y1);
             Console.WriteLine(" the end point of y axis y2  : {0}", y2);
 
-
-
-
-
-
-
-
-            a = Math.Sqrt(Math.Pow((y2 - y1), 2) + Math.Pow((x2 - x1), 2));
+           a = Math.Sqrt(Math.Pow((y2 - y1), 2) + Math.Pow((x2 - x1), 2));
 
             Console.WriteLine(" lenght of the line 1 is = {0}", a);
 
 
-            //line2
+            //line2-----------------------------------------------------------------------
+
             Console.WriteLine( "\n ------------------------------\n ");
             Console.WriteLine(" line 2");
             Console.WriteLine("enter the cordinates of starting point ie x1 and y1  ");
@@ -64,25 +58,27 @@ namespace LineComparison
 
 
 
-
-
-
-
-
             b = Math.Sqrt(Math.Pow((Y2 - Y1), 2) + Math.Pow((X2 - X1), 2));
             Console.WriteLine(" lenght of the line 2 is = {0}", b);
+            Console.WriteLine("\n-------------------\n");
 
             if (a == b)
             {
 
                 Console.WriteLine(" length of both line is same");
             }
-            else
+            else if (a<b)
             {
-                Console.WriteLine("length of both line not equal");
+                Console.WriteLine("length of line 2 is greater ");
             }
+            else if (a>b)
+            {
+                Console.WriteLine("length of line 1 is greater");
+            }
+                     
+        
+        
         }
-
 
     }
 
